@@ -1,0 +1,49 @@
+{
+  "npmScope": "company-repo",
+  "affected": {
+    "defaultBase": "master"
+  },
+  "implicitDependencies": {
+    "angular.json": "*",
+    "package.json": {
+      "dependencies": "*",
+      "devDependencies": "*"
+    },
+    "tsconfig.base.json": "*",
+    "tslint.json": "*",
+    ".eslintrc.json": "*",
+    "nx.json": "*"
+  },
+  "tasksRunnerOptions": {
+    "default": {
+      "runner": "@nrwl/nx-cloud",
+      "options": {
+        "accessToken": "ZGU0MDk5MGYtNGY3OS00Yjc0LWJlZmYtZjhiMzlmZWZkOWZifHJlYWQtd3JpdGU=",
+        "cacheableOperations": ["build", "test", "lint", "e2e"],
+        "canTrackAnalytics": false,
+        "showUsageWarnings": true
+      }
+    }
+  },
+  "projects": {
+    "unicorn-hunt": {
+      "tags": []
+    },
+    "unicorn-hunt-e2e": {
+      "tags": [],
+      "implicitDependencies": ["unicorn-hunt"]
+    },
+    "api": {
+      "tags": []
+    },
+    "api-interfaces": {
+      "tags": []
+    },
+    "cards-grid": {
+      "tags": []
+    },
+    "sticky-scroll": {
+      "tags": []
+    }
+  }
+}
